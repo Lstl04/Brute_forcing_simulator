@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brute Force Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Brute Force Simulator</h1>
+        <h5>Welcome to my Brute Force Simulator, you can test passwords (letters and numbers) by trying to brute force them or see if they are famous password that are easily hackable. If your password is too long (greater than 6 or 7 characters), the brute force might take a while (couple of years...). Enjoy!</h5>
+        <div class="input-container">
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+        </div>
+        <div class="button-container">
+            <button onclick="startPasswordBruteForce()">Password Brute Force</button>
+            <button onclick="startDirectoryBruteForce()">Directory Brute Force</button>
+        </div>
+        <div id="output"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
